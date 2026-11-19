@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>xShare SHL Utility</title>
+  <meta name="description" content="Create, share and manage SMART Health Links for FHIR documents – an xShare Yellow Button demonstrator.">
+  <link rel="icon" type="image/svg+xml" href="assets/yellow-button.svg">
+  <link rel="apple-touch-icon" href="assets/xshare-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="xShare SHL Utility – home">
+        <img src="assets/xshare-logo.webp" alt="xShare" class="brand-logo" width="180" height="62">
+        <span class="brand-text">
+          <span class="brand-title">SMART Health Links</span>
+          <span class="brand-sub">Yellow Button demonstrator</span>
+        </span>
+      </a>
+      <button type="button" class="btn btn-ghost" id="open-settings" aria-haspopup="dialog">
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.4-2.5a7.5 7.5 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7.4 7.4 0 0 0-1.7-1L15 3.5h-4L10.6 6a7.4 7.4 0 0 0-1.7 1l-2.4-1-2 3.4 2 1.6a7.5 7.5 0 0 0 0 2l-2 1.6 2 3.4 2.4-1c.5.4 1.1.8 1.7 1l.4 2.5h4l.4-2.5c.6-.2 1.2-.6 1.7-1l2.4 1 2-3.4-2-1.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span>Settings</span>
+      </button>
+    </div>
+    <nav class="wrap tabs" role="tablist" aria-label="Sections">
+      <button role="tab" id="tab-share" aria-controls="view-share" aria-selected="true" data-view="share">Share</button>
+      <button role="tab" id="tab-links" aria-controls="view-links" aria-selected="false" data-view="links">My links <span class="count" id="links-count"></span></button>
+      <button role="tab" id="tab-test" aria-controls="view-test" aria-selected="false" data-view="test">Open a link</button>
+      <button role="tab" id="tab-about" aria-controls="view-about" aria-selected="false" data-view="about">About</button>
+    </nav>
+  </header>
+
+  <div class="banner" id="storage-banner" hidden>
+    <div class="wrap">This browser blocks local storage, so links you create here are kept only until you close the page. Export them before leaving.</div>
+  </div>
+
+  <main class="wrap">
+    <!-- SHARE -->
+    <section id="view-share" role="tabpanel" aria-labelledby="tab-share" class="view">
+      <form id="share-form" novalidate>
+        <div class="step">
+          <h2><span class="step-no">1</span> Choose the health data to share</h2>
+          <p class="hint">These example documents use the European EHR Exchange Format (EEHRxF) and contain <strong>synthetic test data only</strong>. You can also use a FHIR Bundle of your own.</p>
+          <div class="bundle-list" id="bundle-list" role="radiogroup" aria-label="Health data">
+            <p class="muted">Loading documents…</p>
+          </div>
+          <details class="own-bundle" id="own-bundle">
+            <summary>Use my own FHIR Bundle</summary>
+            <div class="own-bundle-body">
+              <label for="own-file">Upload a JSON file</label>
+              <input type="file" id="own-file" accept=".json,application/json,application/fhir+json">
+              <label for="own-text">…or paste JSON</label>
+              <textarea id="own-text" rows="6" spellcheck="false" placeholder='{"resourceType": "Bundle", …}'></textarea>
+              <div class="row">
+                <button type="button" class="btn" id="own-use">Use this Bundle</button>
+                <span class="field-msg" id="own-msg" role="status"></span>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="step">
+          <h2><span class="step-no">2</span> Choose how to share it <span class="optional">(all optional)</span></h2>
+
+          <div class="field">
+            <label for="opt-label">Label</label>
+            <input id="opt-label" name="label" maxlength="80" autocomplete="off" placeholder="e.g. Lab results for Dr. Virtanen" aria-describedby="help-label">
+            <div class="field-foot"><p class="help" id="help-label">A short description that the receiver sees <em>before</em> opening the data. It is stored in the link itself, so it should not contain sensitive information.</p><span class="counter" id="label-counter">0/80</span></div>
+          </div>
+
+          <div class="field">
+            <label for="opt-passcode">Passcode</label>
+            <div class="input-with-btn">
+              <input id="opt-passcode" name="passcode" type="password" autocomplete="new-password" placeholder="Leave empty for no passcode" aria-describedby="help-passcode">
+              <button type="button" class="btn btn-small" id="toggle-passcode" aria-pressed="false">Show</button>
+            </div>
+            <p class="help" id="help-passcode">The receiver must enter it before the data is released. The passcode is <strong>not</strong> part of the link or QR code, so share it separately: say it out loud, or send it some other way. After 5 wrong attempts the link is locked for good. This app does not save the passcode.</p>
+          </div>
+
+          <div class="field">
+            <label for="opt-exp-preset">Expires</label>
+            <div class="row wrap-row">
+              <select id="opt-exp-preset" aria-describedby="help-exp">
+                <option value="">Never (until revoked)</option>
+                <option value="3600">In 1 hour</option>
+                <option value="86400">In 1 day</option>
+                <option value="604800" selected>In 1 week</option>
+                <option value="2592000">In 30 days</option>
+                <option value="custom">Pick a date and time…</option>
+              </select>
+              <input type="datetime-local" id="opt-exp-custom" aria-label="Expiration date and time" hidden>
+            </div>
+            <p class="help" id="help-exp">After this time the server refuses to release the data, and the receiver's app shows that the link has expired. You can also revoke a link at any time from <em>My links</em>.</p>
+          </div>
+
+          <div class="field checkbox-field">
+            <input type="checkbox" id="opt-longterm" name="longTerm" aria-describedby="help-longterm">
+            <div>
+              <label for="opt-longterm">Long-term link</label>
+              <p class="help" id="help-longterm">Tells the receiving app that it may keep this link and check it again later for updated data (the <code>L</code> flag), rather than fetching the data once. This is useful for ongoing care relationships. This demonstrator can't update the data behind a link, so the flag only tells the receiver what you intend.</p>
+            </div>
+          </div>
+
+          <p class="summary" id="share-summary" aria-live="polite"></p>
+        </div>
+
+        <div class="step step-action">
+          <button type="submit" class="yellow-button" id="share-btn">
+            <img src="assets/yellow-button.svg" alt="" width="36" height="42">
+            <span>Create SMART Health Link</span>
+          </button>
+          <p class="fine">The selected document is sent over HTTPS to <span class="server-name"></span>. The server encrypts it with a new random key and stores only the encrypted copy. The key is part of the link, so anyone who has the link (and the passcode, if you set one) can read the data.</p>
+          <p class="error" id="share-error" role="alert" hidden></p>
+        </div>
+      </form>
+
+      <div id="share-result" class="result" hidden tabindex="-1"></div>
+    </section>
+
+    <!-- MY LINKS -->
+    <section id="view-links" role="tabpanel" aria-labelledby="tab-links" class="view" hidden>
+      <div class="toolbar">
+        <h2>My links</h2>
+        <div class="row wrap-row">
+          <button type="button" class="btn" id="refresh-all">Refresh status</button>
+          <button type="button" class="btn" id="export-links">Export</button>
+          <label class="btn file-btn">Import<input type="file" id="import-links" accept=".json,application/json"></label>
+        </div>
+      </div>
+      <p class="hint">Links you create are saved <strong>only in this browser</strong>, together with their management tokens. Anyone who can use this browser profile can view and revoke them, and can open the shared data (each link contains its decryption key). If you clear your browser data, the tokens are lost and you can no longer revoke these links. Use <em>Export</em> to keep a backup.</p>
+      <div id="links-list" class="links-list"></div>
+    </section>
+
+    <!-- OPEN / TEST -->
+    <section id="view-test" role="tabpanel" aria-labelledby="tab-test" class="view" hidden>
+      <h2>Open a SMART Health Link</h2>
+      <p class="hint">Check that a link works the way the receiver will see it. The app downloads the encrypted data and decrypts it in your browser. Every open is recorded in the link's access log on the server, under the recipient name below.</p>
+      <form id="test-form" class="test-form" novalidate>
+        <div class="field">
+          <label for="test-link">Link</label>
+          <textarea id="test-link" rows="3" spellcheck="false" placeholder="shlink:/… or https://viewer.example/#shlink:/…" required></textarea>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="test-passcode">Passcode <span class="optional">(if the link needs one)</span></label>
+            <input id="test-passcode" type="password" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="test-recipient">Recipient name</label>
+            <input id="test-recipient" autocomplete="off" value="xShare SHL Utility (self-test)">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="test-btn">Open link</button>
+      </form>
+      <div id="test-result" class="test-result" aria-live="polite"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="view-about" role="tabpanel" aria-labelledby="tab-about" class="view prose" hidden>
+      <h2>About this demonstrator</h2>
+      <p><strong>SMART Health Links</strong> (SHL) let a person share health information with a link or QR code. When the link is created, the data is encrypted. The decryption key is carried inside the link itself, so the server that stores the data can't read the stored copy.</p>
+      <img src="assets/yellow-button.svg" alt="The xShare Yellow Button icon" class="about-icon" width="88" height="102">
+      <p>The <a href="https://xshare-project.eu/the-xshare-button/" rel="noopener" target="_blank">xShare Yellow Button</a> envisions everyone sharing their health data in the European Electronic Health Record Exchange Format (EEHRxF) with one click. This utility shows one way the Yellow Button could work: choose a document, choose how to share it, and hand the resulting QR code to a clinician, family member or app.</p>
+      <h3>What a link contains</h3>
+      <ul>
+        <li><strong>url</strong>: where the encrypted data can be fetched (the "manifest")</li>
+        <li><strong>key</strong>: the 256-bit decryption key</li>
+        <li><strong>exp</strong>, <strong>label</strong>, <strong>flag</strong>: optional information shown to the receiver (<code>P</code> = passcode required, <code>L</code> = long-term)</li>
+      </ul>
+      <h3>Managing links</h3>
+      <p>When a link is created, the server returns a <strong>management token</strong>. This app keeps it in your browser so you can see when and by whom a link was opened, and revoke the link when it is no longer needed.</p>
+      <h3>Specifications</h3>
+      <ul>
+        <li><a href="https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html" rel="noopener" target="_blank">SMART Health Links specification (HL7)</a></li>
+        <li><a href="https://xshare-project.eu/" rel="noopener" target="_blank">xShare project</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <img src="assets/co-funded-by-the-eu.png" alt="Co-funded by the European Union" width="200" height="54" class="eu-logo">
+      <p>A demonstrator of the xShare project. Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Health and Digital Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.</p>
+      <p>The example documents contain synthetic data only. Do not share real health data through this demonstrator.</p>
+    </div>
+  </footer>
+
+  <dialog id="settings-dialog" aria-labelledby="settings-title">
+    <form method="dialog" id="settings-form">
+      <h2 id="settings-title">Settings</h2>
+      <div class="field">
+        <label for="set-server">SHL server</label>
+        <input id="set-server" type="url" required>
+        <p class="help">New links are created on this server. Existing links keep working on the server they were created on.</p>
+      </div>
+      <div class="field">
+        <label for="set-viewer">Viewer address</label>
+        <input id="set-viewer" type="url" placeholder="Leave empty to show plain shlink:/ links">
+        <p class="help">If this is set, links and QR codes start with this web address (<code>https://viewer…#shlink:/…</code>), so a phone camera can open them directly in a viewer app. Apps that understand SMART Health Links read the part after the <code>#</code>.</p>
+      </div>
+      <div class="row dialog-actions">
+        <button type="button" class="btn" id="settings-reset">Reset to defaults</button>
+        <span class="spacer"></span>
+        <button value="cancel" class="btn" formnovalidate>Cancel</button>
+        <button value="save" class="btn btn-primary" id="settings-save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

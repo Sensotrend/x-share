@@ -1,0 +1,2099 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "5b36f842-bad8-516c-883f-4bbf860261f5",
+  "meta" : {
+    "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"]
+  },
+  "language" : "fi",
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:5b36f842-bad8-516c-883f-4bbf860261f5"
+  },
+  "type" : "document",
+  "timestamp" : "2026-11-18T23:53:22+02:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:d41b6186-447c-53aa-99eb-ebb2269fdde8",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "d41b6186-447c-53aa-99eb-ebb2269fdde8",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"]
+      },
+      "language" : "fi",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fi\"><a name=\"Composition_d41b6186-447c-53aa-99eb-ebb2269fdde8\"> </a><p>Laboratoriotulokset 2024-12-18</p><p>10 tutkimustulosta</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference",
+        "valueReference" : {
+          "reference" : "urn:uuid:fe22f38e-feee-577a-b6ad-0f964e8f25b8"
+        }
+      }],
+      "identifier" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1.20241218125615.93.2009.1132917519546134"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "Laboratory report"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "date" : "2024-12-18T12:56:15+02:00",
+      "author" : [{
+        "reference" : "urn:uuid:da1c2b81-aabf-51d6-ae00-8ed1ceaf8ebd"
+      }],
+      "title" : "Laboratoriotulokset 2024-12-18",
+      "custodian" : {
+        "reference" : "urn:uuid:966cc807-3ec5-5377-9230-11affecb4e5c"
+      },
+      "section" : [{
+        "title" : "Laboratoriotutkimukset",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "26436-6",
+            "display" : "Laboratory studies (set)"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Tutkimus</th><th>Tulos</th><th>Viitearvot</th><th>Tulkinta</th><th>Aika</th></tr></thead><tbody><tr><td>P -Aspartaattiaminotransferaasi</td><td>77 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Kreatiniini</td><td>112 umol/l</td><td>60 umol/l - 100 umol/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>S -Proteiini</td><td>55 g/l</td><td>62 g/l - 78 g/l</td><td>Alle viitearvon alarajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>fE-Folaatti</td><td>140 nmol/l</td><td>208 nmol/l - 972 nmol/l</td><td>Alle viitearvon alarajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Glukoosi</td><td>5.2 mmol/l</td><td>4 mmol/l - 6.1 mmol/l</td><td>Normaali arvo</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>EKG, 12 kytkentää levossa</td><td>tulos tekstinä tähän</td><td></td><td>Normaali arvo</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Aspartaattiaminotransferaasi</td><td>88 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Aspartaattiaminotransferaasi</td><td>66 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Aspartaattiaminotransferaasi</td><td>55 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>S -Proteiini, fraktiot</td><td>Koko Proteiinielektroforeesi tutkimuksen lausunto. Myös kuvan liittäminen lausunnon yhteyteen on mahdollista.</td><td></td><td>Poikkeava arvo</td><td>2024-12-18T12:56:15+02:00</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:53d0b561-ac7d-58bf-b655-4bdaaa522298"
+        },
+        {
+          "reference" : "urn:uuid:8ccb316c-301f-5ec7-a50f-09dfca658290"
+        },
+        {
+          "reference" : "urn:uuid:980db61d-0364-539c-aa34-e20c9bafec13"
+        },
+        {
+          "reference" : "urn:uuid:0cad1fa8-2161-5719-a7bf-70682e2f3e65"
+        },
+        {
+          "reference" : "urn:uuid:a9d2f6ce-5f92-51de-b8ad-9bb4166da09f"
+        },
+        {
+          "reference" : "urn:uuid:159b1187-3a7b-5aee-9b38-1a9aa5c32211"
+        },
+        {
+          "reference" : "urn:uuid:c76183f2-61b8-5774-8825-e2d874f3c5f4"
+        },
+        {
+          "reference" : "urn:uuid:e13af19f-e34c-5105-8a16-8b0d329a06bc"
+        },
+        {
+          "reference" : "urn:uuid:c1cc19b6-a35e-5d48-9718-62caaf4f1c04"
+        },
+        {
+          "reference" : "urn:uuid:f2b38ebe-bd55-53e1-8273-f6deb75318b4"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "2ed038d4-36cd-5a7a-9594-e90661ea6d08",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_2ed038d4-36cd-5a7a-9594-e90661ea6d08\"> </a><p>Potilas Testinen</p><p>Henkilötunnus 051001A937S</p><p>2001-10-05</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.246.21",
+        "value" : "051001A937S"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Testinen",
+        "given" : ["Potilas"]
+      }],
+      "gender" : "male",
+      "birthDate" : "2001-10-05"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "0bf57bf6-ac02-5dee-8bed-b2224e032380",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_0bf57bf6-ac02-5dee-8bed-b2224e032380\"> </a><p>Terveyskeskus testausta varten 3</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.99.9999999.900.1"
+      }],
+      "name" : "Terveyskeskus testausta varten 3"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "f8705d4f-0c98-5c18-a139-135571fd3ad8",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_f8705d4f-0c98-5c18-a139-135571fd3ad8\"> </a><p>Avohoitokäyntitieto</p><p>2024-12-18T14:00:00+02:00 - 2024-12-19T17:00:00+02:00</p><p>Terveyskeskus testausta varten 3</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1.20241218125602.93.2009.1132917519240126.2"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.5.40156.2008",
+          "code" : "2",
+          "display" : "Avohoitokäyntitieto"
+        }],
+        "text" : "Avohoitokäyntitieto"
+      }],
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "period" : {
+        "start" : "2024-12-18T14:00:00+02:00",
+        "end" : "2024-12-19T17:00:00+02:00"
+      },
+      "serviceProvider" : {
+        "reference" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:da1c2b81-aabf-51d6-ae00-8ed1ceaf8ebd",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "da1c2b81-aabf-51d6-ae00-8ed1ceaf8ebd",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_da1c2b81-aabf-51d6-ae00-8ed1ceaf8ebd\"> </a><p>Teppo Testilääkäri</p></div>"
+      },
+      "name" : [{
+        "use" : "official",
+        "family" : "Testilääkäri",
+        "given" : ["Teppo"]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:966cc807-3ec5-5377-9230-11affecb4e5c",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "966cc807-3ec5-5377-9230-11affecb4e5c",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_966cc807-3ec5-5377-9230-11affecb4e5c\"> </a><p>TestiRekisterinpitäjä</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.99.9999999.200.1"
+      }],
+      "name" : "TestiRekisterinpitäjä"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:04321caf-1ca8-52b5-8cba-028047f20e0a",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "04321caf-1ca8-52b5-8cba-028047f20e0a",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_04321caf-1ca8-52b5-8cba-028047f20e0a\"> </a><p>Teppo Testilääkäri</p></div>"
+      },
+      "name" : [{
+        "use" : "official",
+        "family" : "Testilääkäri",
+        "given" : ["Teppo"]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "2e624f99-45aa-5cce-962c-beef76d130ee",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_2e624f99-45aa-5cce-962c-beef76d130ee\"> </a><p>Teppo Testilääkäri</p><p>KelaTestiPalveluyksikkö</p></div>"
+      },
+      "practitioner" : {
+        "reference" : "urn:uuid:04321caf-1ca8-52b5-8cba-028047f20e0a"
+      },
+      "organization" : {
+        "reference" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "4f60eb6e-6274-52e7-abd9-b5575a216d5c",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_4f60eb6e-6274-52e7-abd9-b5575a216d5c\"> </a><p>kudosnäyte</p></div>"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.17.2004",
+          "code" : "TS",
+          "display" : "kudosnäyte"
+        }],
+        "text" : "kudosnäyte"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:6e778a73-ddba-5c39-b026-6e52a137a524",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "6e778a73-ddba-5c39-b026-6e52a137a524",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_6e778a73-ddba-5c39-b026-6e52a137a524\"> </a><p>P -Aspartaattiaminotransferaasi</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2",
+        "value" : "4591"
+      }],
+      "requisition" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "4591",
+          "display" : "P -Aspartaattiaminotransferaasi",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P-Aspartate aminotransferase"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "1920-8",
+          "display" : "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }],
+        "text" : "P -Aspartaattiaminotransferaasi"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "occurrenceTiming" : {
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2024-12-18",
+            "end" : "2025-12-31"
+          },
+          "count" : 10
+        }
+      },
+      "authoredOn" : "2024-12-18T12:56:15+02:00",
+      "requester" : {
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      "specimen" : [{
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      }],
+      "note" : [{
+        "text" : "Oireeton potilas"
+      },
+      {
+        "text" : "Anamnestiset tiedot: Potilas on oireeton"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a2faf4d9-8144-5d09-87b2-3e6c5c93a60c",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "a2faf4d9-8144-5d09-87b2-3e6c5c93a60c",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_a2faf4d9-8144-5d09-87b2-3e6c5c93a60c\"> </a><p>P -Kreatiniini</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2",
+        "value" : "4600"
+      }],
+      "requisition" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "4600",
+          "display" : "P -Kreatiniini",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P -Creatinine"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "14682-9",
+          "display" : "Creatinine [Moles/volume] in Serum or Plasma"
+        }],
+        "text" : "P -Kreatiniini"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "occurrenceTiming" : {
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2024-12-18",
+            "end" : "2025-12-31"
+          },
+          "count" : 10
+        }
+      },
+      "authoredOn" : "2024-12-18T12:56:15+02:00",
+      "requester" : {
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      "specimen" : [{
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      }],
+      "note" : [{
+        "text" : "Oireeton potilas"
+      },
+      {
+        "text" : "Potilaan paino: 72,5 kg"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:142040b6-47d4-5be5-b467-190a14b35beb",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "142040b6-47d4-5be5-b467-190a14b35beb",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_142040b6-47d4-5be5-b467-190a14b35beb\"> </a><p>S -Proteiini</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2",
+        "value" : "2516"
+      }],
+      "requisition" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "2516",
+          "display" : "S -Proteiini",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "S-Protein"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "2885-2",
+          "display" : "Protein [Mass/volume] in Serum or Plasma"
+        }],
+        "text" : "S -Proteiini"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "occurrenceTiming" : {
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2024-12-18",
+            "end" : "2025-12-31"
+          },
+          "count" : 10
+        }
+      },
+      "authoredOn" : "2024-12-18T12:56:15+02:00",
+      "requester" : {
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      "specimen" : [{
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      }],
+      "note" : [{
+        "text" : "Oireeton potilas"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:688ce658-c87d-536c-904a-1db81ed96c4a",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "688ce658-c87d-536c-904a-1db81ed96c4a",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_688ce658-c87d-536c-904a-1db81ed96c4a\"> </a><p>EKG, 12 kytkentää levossa</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2",
+        "value" : "1270"
+      }],
+      "requisition" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.22.2"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "1270",
+          "display" : "EKG, 12 kytkentää levossa",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Pt-ECG, 12 couplings at rest"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "34534-8",
+          "display" : "12 lead EKG panel"
+        }],
+        "text" : "EKG, 12 kytkentää levossa"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "occurrenceTiming" : {
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2024-12-18",
+            "end" : "2025-12-31"
+          },
+          "count" : 10
+        }
+      },
+      "authoredOn" : "2024-12-18T12:56:15+02:00",
+      "requester" : {
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      "note" : [{
+        "text" : "Oireeton potilas"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "762c65a6-16d0-57f0-872d-4f9e7aa83531",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_762c65a6-16d0-57f0-872d-4f9e7aa83531\"> </a><p>veri</p></div>"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.17.2004",
+          "code" : "B",
+          "display" : "veri"
+        }],
+        "text" : "veri"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:2193ea2e-7e9b-5601-bfda-bd73d23e825f",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "2193ea2e-7e9b-5601-bfda-bd73d23e825f",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_2193ea2e-7e9b-5601-bfda-bd73d23e825f\"> </a><p>Ville Lahti el.</p></div>"
+      },
+      "name" : [{
+        "use" : "official",
+        "family" : "Lahti",
+        "given" : ["Ville"],
+        "suffix" : ["el."]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:d2349147-4175-52ab-b812-e9810e8f69f9",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "d2349147-4175-52ab-b812-e9810e8f69f9",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_d2349147-4175-52ab-b812-e9810e8f69f9\"> </a><p>Ville Lahti el.</p><p>KelaTestiPalveluyksikkö</p></div>"
+      },
+      "practitioner" : {
+        "reference" : "urn:uuid:2193ea2e-7e9b-5601-bfda-bd73d23e825f"
+      },
+      "organization" : {
+        "reference" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:53d0b561-ac7d-58bf-b655-4bdaaa522298",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "53d0b561-ac7d-58bf-b655-4bdaaa522298",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_53d0b561-ac7d-58bf-b655-4bdaaa522298\"> </a><p>P -Aspartaattiaminotransferaasi: 77 U/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.24.4545.1"
+      }],
+      "basedOn" : [{
+        "reference" : "urn:uuid:6e778a73-ddba-5c39-b026-6e52a137a524"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "4591",
+          "display" : "P -Aspartaattiaminotransferaasi",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P-Aspartate aminotransferase"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "1920-8",
+          "display" : "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }],
+        "text" : "P -Aspartaattiaminotransferaasi"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueQuantity" : {
+        "value" : 77,
+        "unit" : "U/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "H",
+          "display" : "Yli viitearvon ylärajan"
+        }],
+        "text" : "Yli viitearvon ylärajan"
+      }],
+      "note" : [{
+        "text" : "Näytteen ottotapa: verinäyte"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 15,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "high" : {
+          "value" : 45,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "text" : "miehet"
+      },
+      {
+        "text" : "Normaalisti näin"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:8ccb316c-301f-5ec7-a50f-09dfca658290",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "8ccb316c-301f-5ec7-a50f-09dfca658290",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_8ccb316c-301f-5ec7-a50f-09dfca658290\"> </a><p>P -Kreatiniini: 112 umol/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.24.2"
+      }],
+      "basedOn" : [{
+        "reference" : "urn:uuid:a2faf4d9-8144-5d09-87b2-3e6c5c93a60c"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "4600",
+          "display" : "P -Kreatiniini",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P -Creatinine"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "14682-9",
+          "display" : "Creatinine [Moles/volume] in Serum or Plasma"
+        },
+        {
+          "system" : "urn:oid:1.2.246.10.123456.1.2022",
+          "code" : "46000",
+          "display" : "paikallisen koodin teksti tähän"
+        }],
+        "text" : "P -Kreatiniini"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueQuantity" : {
+        "value" : 112,
+        "unit" : "umol/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "umol/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "H",
+          "display" : "Yli viitearvon ylärajan"
+        }],
+        "text" : "Yli viitearvon ylärajan"
+      }],
+      "note" : [{
+        "text" : "Huomautus: Tämä on tekijän kirjaama vapaamuotoinen huomautusteksti"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 60,
+          "unit" : "umol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "umol/L"
+        },
+        "high" : {
+          "value" : 100,
+          "unit" : "umol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "umol/L"
+        },
+        "text" : "miehet"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:980db61d-0364-539c-aa34-e20c9bafec13",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "980db61d-0364-539c-aa34-e20c9bafec13",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_980db61d-0364-539c-aa34-e20c9bafec13\"> </a><p>S -Proteiini: 55 g/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.777.123.24.3"
+      }],
+      "basedOn" : [{
+        "reference" : "urn:uuid:142040b6-47d4-5be5-b467-190a14b35beb"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "2516",
+          "display" : "S -Proteiini",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "S-Protein"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "2885-2",
+          "display" : "Protein [Mass/volume] in Serum or Plasma"
+        }],
+        "text" : "S -Proteiini"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueQuantity" : {
+        "value" : 55,
+        "unit" : "g/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "L",
+          "display" : "Alle viitearvon alarajan"
+        }],
+        "text" : "Alle viitearvon alarajan"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 62,
+          "unit" : "g/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g/L"
+        },
+        "high" : {
+          "value" : 78,
+          "unit" : "g/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g/L"
+        },
+        "text" : "aikuiset yli 18v"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:0cad1fa8-2161-5719-a7bf-70682e2f3e65",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "0cad1fa8-2161-5719-a7bf-70682e2f3e65",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_0cad1fa8-2161-5719-a7bf-70682e2f3e65\"> </a><p>fE-Folaatti: 140 nmol/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.333355.24.1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "1414",
+          "display" : "fE-Folaatti",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "fE-Folate"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "14731-4",
+          "display" : "Folate [Moles/volume] in Red Blood Cells"
+        }],
+        "text" : "fE-Folaatti"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueQuantity" : {
+        "value" : 140,
+        "unit" : "nmol/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "nmol/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "L",
+          "display" : "Alle viitearvon alarajan"
+        }],
+        "text" : "Alle viitearvon alarajan"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 208,
+          "unit" : "nmol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "nmol/L"
+        },
+        "high" : {
+          "value" : 972,
+          "unit" : "nmol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "nmol/L"
+        },
+        "text" : "kaikki"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a9d2f6ce-5f92-51de-b8ad-9bb4166da09f",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "a9d2f6ce-5f92-51de-b8ad-9bb4166da09f",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_a9d2f6ce-5f92-51de-b8ad-9bb4166da09f\"> </a><p>P -Glukoosi: 5.2 mmol/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.123456788777.14.2022.123.24.5"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "1471",
+          "display" : "P -Glukoosi",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P -Glucose"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "14749-6",
+          "display" : "Glucose [Moles/volume] in Serum or Plasma"
+        }],
+        "text" : "P -Glukoosi"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      {
+        "display" : "Liisa Hoitaja"
+      }],
+      "valueQuantity" : {
+        "value" : 5.2,
+        "unit" : "mmol/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "N",
+          "display" : "Normaali arvo"
+        }],
+        "text" : "Normaali arvo"
+      }],
+      "note" : [{
+        "text" : "Huomautus: Tämä on tekijän kirjaama vapaamuotoinen huomautusteksti"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "2",
+          "display" : "Vierimittaus"
+        }],
+        "text" : "Vierimittaus"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 4,
+          "unit" : "mmol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/L"
+        },
+        "high" : {
+          "value" : 6.1,
+          "unit" : "mmol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/L"
+        },
+        "text" : "aikuiset, yli 16v"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:159b1187-3a7b-5aee-9b38-1a9aa5c32211",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "159b1187-3a7b-5aee-9b38-1a9aa5c32211",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_159b1187-3a7b-5aee-9b38-1a9aa5c32211\"> </a><p>EKG, 12 kytkentää levossa: tulos tekstinä tähän</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.1238888.56444.24.3"
+      }],
+      "basedOn" : [{
+        "reference" : "urn:uuid:688ce658-c87d-536c-904a-1db81ed96c4a"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "1270",
+          "display" : "EKG, 12 kytkentää levossa",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Pt-ECG, 12 couplings at rest"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "urn:oid:1.2.246.10.123456.1.2022",
+          "code" : "12700",
+          "display" : "paikallisen koodin teksti tähän"
+        }],
+        "text" : "EKG, 12 kytkentää levossa"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueString" : "tulos tekstinä tähän",
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "N",
+          "display" : "Normaali arvo"
+        }],
+        "text" : "Normaali arvo"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c76183f2-61b8-5774-8825-e2d874f3c5f4",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "c76183f2-61b8-5774-8825-e2d874f3c5f4",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_c76183f2-61b8-5774-8825-e2d874f3c5f4\"> </a><p>P -Aspartaattiaminotransferaasi: 88 U/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.241.1.66666"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "4591",
+          "display" : "P -Aspartaattiaminotransferaasi",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P-Aspartate aminotransferase"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "1920-8",
+          "display" : "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }],
+        "text" : "P -Aspartaattiaminotransferaasi"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueQuantity" : {
+        "value" : 88,
+        "unit" : "U/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "H",
+          "display" : "Yli viitearvon ylärajan"
+        }],
+        "text" : "Yli viitearvon ylärajan"
+      }],
+      "note" : [{
+        "text" : "Näytteen ottotapa: verinäyte"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 15,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "high" : {
+          "value" : 45,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "text" : "miehet"
+      },
+      {
+        "text" : "Normaalisti näin"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:e13af19f-e34c-5105-8a16-8b0d329a06bc",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "e13af19f-e34c-5105-8a16-8b0d329a06bc",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_e13af19f-e34c-5105-8a16-8b0d329a06bc\"> </a><p>P -Aspartaattiaminotransferaasi: 66 U/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.123.243777777.1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "4591",
+          "display" : "P -Aspartaattiaminotransferaasi",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P-Aspartate aminotransferase"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "1920-8",
+          "display" : "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }],
+        "text" : "P -Aspartaattiaminotransferaasi"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueQuantity" : {
+        "value" : 66,
+        "unit" : "U/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "H",
+          "display" : "Yli viitearvon ylärajan"
+        }],
+        "text" : "Yli viitearvon ylärajan"
+      }],
+      "note" : [{
+        "text" : "Näytteen ottotapa: verinäyte"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 15,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "high" : {
+          "value" : 45,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "text" : "miehet"
+      },
+      {
+        "text" : "Normaalisti näin"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c1cc19b6-a35e-5d48-9718-62caaf4f1c04",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "c1cc19b6-a35e-5d48-9718-62caaf4f1c04",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_c1cc19b6-a35e-5d48-9718-62caaf4f1c04\"> </a><p>P -Aspartaattiaminotransferaasi: 55 U/l</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.55659999.123.244.1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "4591",
+          "display" : "P -Aspartaattiaminotransferaasi",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "P-Aspartate aminotransferase"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "1920-8",
+          "display" : "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }],
+        "text" : "P -Aspartaattiaminotransferaasi"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380"
+      },
+      {
+        "display" : "Ville Virtanen"
+      }],
+      "valueQuantity" : {
+        "value" : 55,
+        "unit" : "U/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "H",
+          "display" : "Yli viitearvon ylärajan"
+        }],
+        "text" : "Yli viitearvon ylärajan"
+      }],
+      "note" : [{
+        "text" : "Näytteen ottotapa: verinäyte"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 15,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "high" : {
+          "value" : 45,
+          "unit" : "U/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "U/L"
+        },
+        "text" : "miehet"
+      },
+      {
+        "text" : "Normaalisti näin"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f2b38ebe-bd55-53e1-8273-f6deb75318b4",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "f2b38ebe-bd55-53e1-8273-f6deb75318b4",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_f2b38ebe-bd55-53e1-8273-f6deb75318b4\"> </a><p>S -Proteiini, fraktiot: Koko Proteiinielektroforeesi tutkimuksen lausunto. Myös kuvan liittäminen lausunnon yhteyteen on mahdollista.</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1234567.14.2022.44445334.123.2599.1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "2522",
+          "display" : "S -Proteiini, fraktiot",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "S -Protein electrophoresis"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }],
+        "text" : "S -Proteiini, fraktiot"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:d2349147-4175-52ab-b812-e9810e8f69f9"
+      },
+      {
+        "display" : "Ville Lahti"
+      }],
+      "valueString" : "Koko Proteiinielektroforeesi tutkimuksen lausunto. Myös kuvan liittäminen lausunnon yhteyteen on mahdollista.",
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "A",
+          "display" : "Abnormal"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "A",
+          "display" : "Poikkeava arvo"
+        }],
+        "text" : "Poikkeava arvo"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:fe22f38e-feee-577a-b6ad-0f964e8f25b8",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "fe22f38e-feee-577a-b6ad-0f964e8f25b8",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_fe22f38e-feee-577a-b6ad-0f964e8f25b8\"> </a><table><thead><tr><th>Tutkimus</th><th>Tulos</th><th>Viitearvot</th><th>Tulkinta</th><th>Aika</th></tr></thead><tbody><tr><td>P -Aspartaattiaminotransferaasi</td><td>77 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Kreatiniini</td><td>112 umol/l</td><td>60 umol/l - 100 umol/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>S -Proteiini</td><td>55 g/l</td><td>62 g/l - 78 g/l</td><td>Alle viitearvon alarajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>fE-Folaatti</td><td>140 nmol/l</td><td>208 nmol/l - 972 nmol/l</td><td>Alle viitearvon alarajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Glukoosi</td><td>5.2 mmol/l</td><td>4 mmol/l - 6.1 mmol/l</td><td>Normaali arvo</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>EKG, 12 kytkentää levossa</td><td>tulos tekstinä tähän</td><td/><td>Normaali arvo</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Aspartaattiaminotransferaasi</td><td>88 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Aspartaattiaminotransferaasi</td><td>66 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>P -Aspartaattiaminotransferaasi</td><td>55 U/l</td><td>15 U/l - 45 U/l</td><td>Yli viitearvon ylärajan</td><td>2024-12-18T12:56:15+02:00</td></tr><tr><td>S -Proteiini, fraktiot</td><td>Koko Proteiinielektroforeesi tutkimuksen lausunto. Myös kuvan liittäminen lausunnon yhteyteen on mahdollista.</td><td/><td>Poikkeava arvo</td><td>2024-12-18T12:56:15+02:00</td></tr></tbody></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+        "valueReference" : {
+          "reference" : "urn:uuid:d41b6186-447c-53aa-99eb-ebb2269fdde8"
+        }
+      }],
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1.20241218125615.93.2009.1132917519546134"
+      }],
+      "basedOn" : [{
+        "reference" : "urn:uuid:6e778a73-ddba-5c39-b026-6e52a137a524"
+      },
+      {
+        "reference" : "urn:uuid:a2faf4d9-8144-5d09-87b2-3e6c5c93a60c"
+      },
+      {
+        "reference" : "urn:uuid:142040b6-47d4-5be5-b467-190a14b35beb"
+      },
+      {
+        "reference" : "urn:uuid:688ce658-c87d-536c-904a-1db81ed96c4a"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "Laboratory report"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      "effectiveDateTime" : "2024-12-18T12:56:15+02:00",
+      "issued" : "2024-12-18T12:56:15+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:da1c2b81-aabf-51d6-ae00-8ed1ceaf8ebd"
+      }],
+      "specimen" : [{
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      },
+      {
+        "reference" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531"
+      }],
+      "result" : [{
+        "reference" : "urn:uuid:53d0b561-ac7d-58bf-b655-4bdaaa522298"
+      },
+      {
+        "reference" : "urn:uuid:8ccb316c-301f-5ec7-a50f-09dfca658290"
+      },
+      {
+        "reference" : "urn:uuid:980db61d-0364-539c-aa34-e20c9bafec13"
+      },
+      {
+        "reference" : "urn:uuid:0cad1fa8-2161-5719-a7bf-70682e2f3e65"
+      },
+      {
+        "reference" : "urn:uuid:a9d2f6ce-5f92-51de-b8ad-9bb4166da09f"
+      },
+      {
+        "reference" : "urn:uuid:159b1187-3a7b-5aee-9b38-1a9aa5c32211"
+      },
+      {
+        "reference" : "urn:uuid:c76183f2-61b8-5774-8825-e2d874f3c5f4"
+      },
+      {
+        "reference" : "urn:uuid:e13af19f-e34c-5105-8a16-8b0d329a06bc"
+      },
+      {
+        "reference" : "urn:uuid:c1cc19b6-a35e-5d48-9718-62caaf4f1c04"
+      },
+      {
+        "reference" : "urn:uuid:f2b38ebe-bd55-53e1-8273-f6deb75318b4"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:8ddabb88-11c9-51b3-a3c4-5fa596f3e33c",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "8ddabb88-11c9-51b3-a3c4-5fa596f3e33c",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_8ddabb88-11c9-51b3-a3c4-5fa596f3e33c\"> </a><p>kanta2fhir 0.1.0</p></div>"
+      },
+      "deviceName" : [{
+        "name" : "kanta2fhir",
+        "type" : "manufacturer-name"
+      }],
+      "version" : [{
+        "value" : "0.1.0"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:d341b9ac-cf52-51bf-981c-95b508e2cf12",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "d341b9ac-cf52-51bf-981c-95b508e2cf12",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_d341b9ac-cf52-51bf-981c-95b508e2cf12\"> </a><p>Converted by kanta2fhir 0.1.0 from 1 Kanta document(s)</p></div>"
+      },
+      "target" : [{
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      {
+        "reference" : "urn:uuid:0bf57bf6-ac02-5dee-8bed-b2224e032380"
+      },
+      {
+        "reference" : "urn:uuid:f8705d4f-0c98-5c18-a139-135571fd3ad8"
+      },
+      {
+        "reference" : "urn:uuid:da1c2b81-aabf-51d6-ae00-8ed1ceaf8ebd"
+      },
+      {
+        "reference" : "urn:uuid:966cc807-3ec5-5377-9230-11affecb4e5c"
+      },
+      {
+        "reference" : "urn:uuid:04321caf-1ca8-52b5-8cba-028047f20e0a"
+      },
+      {
+        "reference" : "urn:uuid:2e624f99-45aa-5cce-962c-beef76d130ee"
+      },
+      {
+        "reference" : "urn:uuid:4f60eb6e-6274-52e7-abd9-b5575a216d5c"
+      },
+      {
+        "reference" : "urn:uuid:6e778a73-ddba-5c39-b026-6e52a137a524"
+      },
+      {
+        "reference" : "urn:uuid:a2faf4d9-8144-5d09-87b2-3e6c5c93a60c"
+      },
+      {
+        "reference" : "urn:uuid:142040b6-47d4-5be5-b467-190a14b35beb"
+      },
+      {
+        "reference" : "urn:uuid:688ce658-c87d-536c-904a-1db81ed96c4a"
+      },
+      {
+        "reference" : "urn:uuid:762c65a6-16d0-57f0-872d-4f9e7aa83531"
+      },
+      {
+        "reference" : "urn:uuid:2193ea2e-7e9b-5601-bfda-bd73d23e825f"
+      },
+      {
+        "reference" : "urn:uuid:d2349147-4175-52ab-b812-e9810e8f69f9"
+      },
+      {
+        "reference" : "urn:uuid:53d0b561-ac7d-58bf-b655-4bdaaa522298"
+      },
+      {
+        "reference" : "urn:uuid:8ccb316c-301f-5ec7-a50f-09dfca658290"
+      },
+      {
+        "reference" : "urn:uuid:980db61d-0364-539c-aa34-e20c9bafec13"
+      },
+      {
+        "reference" : "urn:uuid:0cad1fa8-2161-5719-a7bf-70682e2f3e65"
+      },
+      {
+        "reference" : "urn:uuid:a9d2f6ce-5f92-51de-b8ad-9bb4166da09f"
+      },
+      {
+        "reference" : "urn:uuid:159b1187-3a7b-5aee-9b38-1a9aa5c32211"
+      },
+      {
+        "reference" : "urn:uuid:c76183f2-61b8-5774-8825-e2d874f3c5f4"
+      },
+      {
+        "reference" : "urn:uuid:e13af19f-e34c-5105-8a16-8b0d329a06bc"
+      },
+      {
+        "reference" : "urn:uuid:c1cc19b6-a35e-5d48-9718-62caaf4f1c04"
+      },
+      {
+        "reference" : "urn:uuid:f2b38ebe-bd55-53e1-8273-f6deb75318b4"
+      },
+      {
+        "reference" : "urn:uuid:fe22f38e-feee-577a-b6ad-0f964e8f25b8"
+      }],
+      "recorded" : "2026-11-18T23:53:22+02:00",
+      "agent" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code" : "assembler"
+          }]
+        },
+        "who" : {
+          "reference" : "urn:uuid:8ddabb88-11c9-51b3-a3c4-5fa596f3e33c"
+        }
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "type" : "DocumentReference",
+          "identifier" : {
+            "system" : "urn:ietf:rfc:3986",
+            "value" : "urn:oid:1.2.246.10.1.20241218125615.93.2009.1132917519546134"
+          }
+        }
+      }]
+    }
+  }]
+}

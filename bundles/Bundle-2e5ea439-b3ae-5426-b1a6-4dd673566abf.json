@@ -1,0 +1,435 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "2e5ea439-b3ae-5426-b1a6-4dd673566abf",
+  "meta" : {
+    "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"]
+  },
+  "language" : "fi",
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:2e5ea439-b3ae-5426-b1a6-4dd673566abf"
+  },
+  "type" : "document",
+  "timestamp" : "2026-11-18T23:53:22+02:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:434f57bc-84c1-5508-bb11-5aaf143c84a7",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "434f57bc-84c1-5508-bb11-5aaf143c84a7",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"]
+      },
+      "language" : "fi",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fi\"><a name=\"Composition_434f57bc-84c1-5508-bb11-5aaf143c84a7\"> </a><p>Laboratoriotulokset 2024-12-18</p><p>1 tutkimustulosta</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference",
+        "valueReference" : {
+          "reference" : "urn:uuid:a96c99ef-21e3-5697-af6f-d9cba7da9ede"
+        }
+      }],
+      "identifier" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1.20241218125532.93.2009.1132917519295184"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "Laboratory report"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:af3eb24d-a268-58f4-ab35-05bf8924efd0"
+      },
+      "date" : "2024-12-18T12:55:32+02:00",
+      "author" : [{
+        "reference" : "urn:uuid:7f10a398-73a9-5949-b66d-b31c8921f887"
+      }],
+      "title" : "Laboratoriotulokset 2024-12-18",
+      "custodian" : {
+        "reference" : "urn:uuid:7f10a398-73a9-5949-b66d-b31c8921f887"
+      },
+      "section" : [{
+        "title" : "Laboratoriotutkimukset",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "26436-6",
+            "display" : "Laboratory studies (set)"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Tutkimus</th><th>Tulos</th><th>Viitearvot</th><th>Tulkinta</th><th>Aika</th></tr></thead><tbody><tr><td>-COVID-19-koronavirustauti, nukleiinihappo (kval)</td><td>negat</td><td></td><td>Normaali arvo</td><td>2023-12-27T10:11:00+02:00</td></tr></tbody></table></div>"
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:b199de98-15a3-5ee3-86f5-0ada71901227"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "2ed038d4-36cd-5a7a-9594-e90661ea6d08",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_2ed038d4-36cd-5a7a-9594-e90661ea6d08\"> </a><p>Potilas Testinen</p><p>Henkilötunnus 051001A937S</p><p>2001-10-05</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:1.2.246.21",
+        "value" : "051001A937S"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Testinen",
+        "given" : ["Potilas"]
+      }],
+      "gender" : "male",
+      "birthDate" : "2001-10-05"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:56deee7a-2384-5758-80a0-5dd96539e530",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "56deee7a-2384-5758-80a0-5dd96539e530",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_56deee7a-2384-5758-80a0-5dd96539e530\"> </a><p>Terveyskeskus testausta varten 3</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.99.9999999.900.2"
+      }],
+      "name" : "Terveyskeskus testausta varten 3"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:af3eb24d-a268-58f4-ab35-05bf8924efd0",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "af3eb24d-a268-58f4-ab35-05bf8924efd0",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_af3eb24d-a268-58f4-ab35-05bf8924efd0\"> </a><p>Avohoitokäyntitieto</p><p>2024-12-18T09:00:00+02:00 - 2024-12-19T10:00:00+02:00</p><p>Terveyskeskus testausta varten 3</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1.20241218125522.93.2009.1132917519211170.2"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.5.40156.2008",
+          "code" : "2",
+          "display" : "Avohoitokäyntitieto"
+        }],
+        "text" : "Avohoitokäyntitieto"
+      }],
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "period" : {
+        "start" : "2024-12-18T09:00:00+02:00",
+        "end" : "2024-12-19T10:00:00+02:00"
+      },
+      "serviceProvider" : {
+        "reference" : "urn:uuid:56deee7a-2384-5758-80a0-5dd96539e530"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:7f10a398-73a9-5949-b66d-b31c8921f887",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "7f10a398-73a9-5949-b66d-b31c8921f887",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_7f10a398-73a9-5949-b66d-b31c8921f887\"> </a><p>TestiRekisterinpitäjä</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.99.9999999.200.2"
+      }],
+      "name" : "TestiRekisterinpitäjä"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f4b88163-7db9-533e-a8f4-e974289acbbb",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "f4b88163-7db9-533e-a8f4-e974289acbbb",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_f4b88163-7db9-533e-a8f4-e974289acbbb\"> </a><p>erite</p></div>"
+      },
+      "type" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.17.2004",
+          "code" : "SE",
+          "display" : "erite"
+        }],
+        "text" : "erite"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b199de98-15a3-5ee3-86f5-0ada71901227",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "b199de98-15a3-5ee3-86f5-0ada71901227",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_b199de98-15a3-5ee3-86f5-0ada71901227\"> </a><p>-COVID-19-koronavirustauti, nukleiinihappo (kval): negat</p></div>"
+      },
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1.20241218125532.93.2009.1132917519295184.80777"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.3.2006",
+          "code" : "6466",
+          "display" : "-COVID-19-koronavirustauti, nukleiinihappo (kval)",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "en"
+              },
+              {
+                "url" : "content",
+                "valueString" : "COVID-19-coronavirus disease, nucleic acid (qual)"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94500-6",
+          "display" : "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory system specimen by NAA with probe detection"
+        }],
+        "text" : "-COVID-19-koronavirustauti, nukleiinihappo (kval)"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:af3eb24d-a268-58f4-ab35-05bf8924efd0"
+      },
+      "effectiveDateTime" : "2023-12-27T10:11:00+02:00",
+      "issued" : "2023-12-27T10:12:00+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:56deee7a-2384-5758-80a0-5dd96539e530"
+      }],
+      "valueString" : "negat",
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.5.78.1997",
+          "code" : "N",
+          "display" : "Normaali arvo"
+        }],
+        "text" : "Normaali arvo"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.246.537.6.607.2014",
+          "code" : "1",
+          "display" : "Laboratorio"
+        }],
+        "text" : "Laboratorio"
+      },
+      "specimen" : {
+        "reference" : "urn:uuid:f4b88163-7db9-533e-a8f4-e974289acbbb"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a96c99ef-21e3-5697-af6f-d9cba7da9ede",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "a96c99ef-21e3-5697-af6f-d9cba7da9ede",
+      "meta" : {
+        "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_a96c99ef-21e3-5697-af6f-d9cba7da9ede\"> </a><table><thead><tr><th>Tutkimus</th><th>Tulos</th><th>Viitearvot</th><th>Tulkinta</th><th>Aika</th></tr></thead><tbody><tr><td>-COVID-19-koronavirustauti, nukleiinihappo (kval)</td><td>negat</td><td/><td>Normaali arvo</td><td>2023-12-27T10:11:00+02:00</td></tr></tbody></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+        "valueReference" : {
+          "reference" : "urn:uuid:434f57bc-84c1-5508-bb11-5aaf143c84a7"
+        }
+      }],
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1.20241218125532.93.2009.1132917519295184"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "Laboratory report"
+        }]
+      },
+      "subject" : {
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      "encounter" : {
+        "reference" : "urn:uuid:af3eb24d-a268-58f4-ab35-05bf8924efd0"
+      },
+      "effectiveDateTime" : "2023-12-27T10:11:00+02:00",
+      "issued" : "2023-12-27T10:12:00+02:00",
+      "performer" : [{
+        "reference" : "urn:uuid:7f10a398-73a9-5949-b66d-b31c8921f887"
+      }],
+      "specimen" : [{
+        "reference" : "urn:uuid:f4b88163-7db9-533e-a8f4-e974289acbbb"
+      }],
+      "result" : [{
+        "reference" : "urn:uuid:b199de98-15a3-5ee3-86f5-0ada71901227"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:8ddabb88-11c9-51b3-a3c4-5fa596f3e33c",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "8ddabb88-11c9-51b3-a3c4-5fa596f3e33c",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_8ddabb88-11c9-51b3-a3c4-5fa596f3e33c\"> </a><p>kanta2fhir 0.1.0</p></div>"
+      },
+      "deviceName" : [{
+        "name" : "kanta2fhir",
+        "type" : "manufacturer-name"
+      }],
+      "version" : [{
+        "value" : "0.1.0"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b94d0442-7f3d-5322-9aaa-4183bbd08aa6",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "b94d0442-7f3d-5322-9aaa-4183bbd08aa6",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_b94d0442-7f3d-5322-9aaa-4183bbd08aa6\"> </a><p>Converted by kanta2fhir 0.1.0 from 1 Kanta document(s)</p></div>"
+      },
+      "target" : [{
+        "reference" : "urn:uuid:2ed038d4-36cd-5a7a-9594-e90661ea6d08"
+      },
+      {
+        "reference" : "urn:uuid:56deee7a-2384-5758-80a0-5dd96539e530"
+      },
+      {
+        "reference" : "urn:uuid:af3eb24d-a268-58f4-ab35-05bf8924efd0"
+      },
+      {
+        "reference" : "urn:uuid:7f10a398-73a9-5949-b66d-b31c8921f887"
+      },
+      {
+        "reference" : "urn:uuid:f4b88163-7db9-533e-a8f4-e974289acbbb"
+      },
+      {
+        "reference" : "urn:uuid:b199de98-15a3-5ee3-86f5-0ada71901227"
+      },
+      {
+        "reference" : "urn:uuid:a96c99ef-21e3-5697-af6f-d9cba7da9ede"
+      }],
+      "recorded" : "2026-11-18T23:53:22+02:00",
+      "agent" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code" : "assembler"
+          }]
+        },
+        "who" : {
+          "reference" : "urn:uuid:8ddabb88-11c9-51b3-a3c4-5fa596f3e33c"
+        }
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "type" : "DocumentReference",
+          "identifier" : {
+            "system" : "urn:ietf:rfc:3986",
+            "value" : "urn:oid:1.2.246.10.1.20241218125532.93.2009.1132917519295184"
+          }
+        }
+      }]
+    }
+  }]
+}
